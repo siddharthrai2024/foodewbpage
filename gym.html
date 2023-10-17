@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth fitness</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* css rest */
+    body {
+        color: white;
+        /* text color white */
+        margin: 0px;
+        padding: 0px;
+        background: url('gym.jpg');
+
+
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        /* border: 2px solid red; */
+        left: 34px;
+        top: 20px;
+
+    }
+
+    .left img {
+        width: 60px;
+        /* filter: invert(100%) to get white image */
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        /* to bring anything in centre use display block
+        set margin */
+        display: block;
+        width: 45%;
+        margin: 20px auto;
+        
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        /*adjust position */
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+
+    }
+
+    .navbar li a {
+
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 3px 5px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font size: 15px;
+        cursor: pointer;
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 110px 80px;
+        padding: 0px auto;
+        width: 80%;
+        border-radius: 28px;
+
+    }
+    .container h2 {
+        text-align: center;
+        color: rgb(255 0 221);
+    }
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="2.png " alt=" ">
+            <div>Siddharth fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+
+
+        </div>
+
+        <!-- right box for buttons -->
+
+        <div class="right">
+            <button class="btn"> Call Us Now</button>
+            <button class="btn"> Email us</button>
+
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h2>JOIN THE BEST GYM OF JAMSHEDPUR</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+
+        </form>
+
+
+
+    </div>
+</body>
+
+</html>
